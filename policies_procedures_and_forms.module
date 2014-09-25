@@ -56,6 +56,12 @@ function policies_procedures_and_forms_theme($existing, $type, $theme, $path) {
  * Custom page callback function, declared in hook_menu().
  */
 function _ppf_page() {
-  $output = views_embed_view('policies_procedures_and_forms', 'block');
+  drupal_add_css('
+  .views-row {
+    margin: 10px 0;
+  }', 'inline');
+  $output = '';
+  $output .= '<p><a href="/node/add/policies-procedures-and-forms">Upload more Policies, Procedures and Forms</a></p>';
+  $output .= views_embed_view('policies_procedures_and_forms', 'block');
   return $output;
 }
