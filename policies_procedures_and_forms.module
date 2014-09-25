@@ -1,0 +1,52 @@
+<?php
+/**
+ * @file
+ * Code for the Policies, Procedures, and Forms feature.
+ */
+
+include_once 'policies_procedures_and_forms.features.inc';
+
+/**
+ * Implements hook_menu().
+ */
+function policies_procedures_and_forms_menu() {
+  $items = array();
+  $items['policies-procedures-forms'] = array(
+    'title' => 'Policies, Procedures, and Forms',
+    'page callback' => '_ppf_page',
+    'access arguments' => array('view ppf'),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function policies_procedures_and_forms_permission() {
+  return array(
+    'view ppf' => array(
+      'title' => t('View Policies, Procedures, and Forms'),
+    ),
+  );
+}
+
+/*
+ * Implements hook_theme().
+ */
+function policies_procedures_and_forms_theme($existing, $type, $theme, $path) {
+  return array(
+    'views_view_field__policies_procedures_and_forms__block__title' => array(
+      'arguments' => array('view' => NULL, 'field' => NULL, 'row' => NULL, 'output' => NULL),
+      'template' => 'views-view-field--policies-procedures-and-forms--block--title',
+      'path' => drupal_get_path('module', 'policies_procedures_and_forms') . '/templates',
+    ),
+  );
+}
+
+/**
+ * Custom page callback function, declared in hook_menu().
+ */
+function _ppf_page() {
+  $output = views_embed_view('policies_procedures_and_forms', 'block');
+  return $output;
+}
