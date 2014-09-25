@@ -2,6 +2,15 @@
 /**
  * @file
  * Code for the Policies, Procedures, and Forms feature.
+ *
+ *
+ * NOTE: Conditional Fields' "field dependencies" are not imported via Features, and documentation to
+ * create field dependencies programatically (i.e., on install) is not available. As such, they must
+ * be created manually, as per the following:
+ *
+ * - File is visible when URL or Upload File has value "File".
+ * - URL is visible when URL or Upload File has value "URL".
+ *
  */
 
 include_once 'policies_procedures_and_forms.features.inc';
