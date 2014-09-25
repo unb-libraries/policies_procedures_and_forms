@@ -61,7 +61,9 @@ function _ppf_page() {
     margin: 10px 0;
   }', 'inline');
   $output = '';
-  $output .= '<p><a href="/node/add/policies-procedures-and-forms">Upload more Policies, Procedures and Forms</a></p>';
+  if (user_access('create policies_procedures_and_forms content')) {
+    $output .= '<p><a href="/node/add/policies-procedures-and-forms">Upload more Policies, Procedures and Forms</a></p>';
+  }
   $output .= views_embed_view('policies_procedures_and_forms', 'block');
   return $output;
 }
