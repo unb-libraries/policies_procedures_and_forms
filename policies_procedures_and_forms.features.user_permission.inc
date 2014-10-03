@@ -58,7 +58,9 @@ function policies_procedures_and_forms_user_default_permissions() {
   // Exported permission: 'view ppf'.
   $permissions['view ppf'] = array(
     'name' => 'view ppf',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'policies_procedures_and_forms',
   );
 
