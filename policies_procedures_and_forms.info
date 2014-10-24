@@ -1,7 +1,6 @@
 name = Policies, Procedures, and Forms
 core = 7.x
 package = UNB Library
-version = 7.x-1.0
 project = policies_procedures_and_forms
 dependencies[] = conditional_fields
 dependencies[] = ctools
