@@ -10,14 +10,13 @@
 function policies_procedures_and_forms_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_category'
+  // Exported field_base: 'field_category'.
   $field_bases['field_category'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_category',
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',
@@ -42,21 +41,13 @@ function policies_procedures_and_forms_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_comment'
+  // Exported field_base: 'field_comment'.
   $field_bases['field_comment'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_comment',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -69,21 +60,13 @@ function policies_procedures_and_forms_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_file'
+  // Exported field_base: 'field_file'.
   $field_bases['field_file'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_file',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -100,21 +83,13 @@ function policies_procedures_and_forms_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_url'
+  // Exported field_base: 'field_url'.
   $field_bases['field_url'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_url',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -129,14 +104,13 @@ function policies_procedures_and_forms_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_url_or_upload_file'
+  // Exported field_base: 'field_url_or_upload_file'.
   $field_bases['field_url_or_upload_file'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_url_or_upload_file',
-    'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
         0 => 'value',

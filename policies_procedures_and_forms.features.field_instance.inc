@@ -10,7 +10,8 @@
 function policies_procedures_and_forms_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-policies_procedures_and_forms-field_category'
+  // Exported field_instance:
+  // 'node-policies_procedures_and_forms-field_category'.
   $field_instances['node-policies_procedures_and_forms-field_category'] = array(
     'bundle' => 'policies_procedures_and_forms',
     'default_value' => NULL,
@@ -47,7 +48,8 @@ function policies_procedures_and_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-policies_procedures_and_forms-field_comment'
+  // Exported field_instance:
+  // 'node-policies_procedures_and_forms-field_comment'.
   $field_instances['node-policies_procedures_and_forms-field_comment'] = array(
     'bundle' => 'policies_procedures_and_forms',
     'default_value' => NULL,
@@ -87,7 +89,7 @@ function policies_procedures_and_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-policies_procedures_and_forms-field_file'
+  // Exported field_instance: 'node-policies_procedures_and_forms-field_file'.
   $field_instances['node-policies_procedures_and_forms-field_file'] = array(
     'bundle' => 'policies_procedures_and_forms',
     'deleted' => 0,
@@ -122,6 +124,16 @@ function policies_procedures_and_forms_field_default_field_instances() {
       'active' => 1,
       'module' => 'file',
       'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => FALSE,
+        'insert_class' => '',
+        'insert_default' => array(
+          0 => 'auto',
+        ),
+        'insert_styles' => array(
+          0 => 'auto',
+        ),
+        'insert_width' => '',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
@@ -129,7 +141,7 @@ function policies_procedures_and_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-policies_procedures_and_forms-field_url'
+  // Exported field_instance: 'node-policies_procedures_and_forms-field_url'.
   $field_instances['node-policies_procedures_and_forms-field_url'] = array(
     'bundle' => 'policies_procedures_and_forms',
     'default_value' => NULL,
@@ -169,7 +181,8 @@ function policies_procedures_and_forms_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-policies_procedures_and_forms-field_url_or_upload_file'
+  // Exported field_instance:
+  // 'node-policies_procedures_and_forms-field_url_or_upload_file'.
   $field_instances['node-policies_procedures_and_forms-field_url_or_upload_file'] = array(
     'bundle' => 'policies_procedures_and_forms',
     'default_value' => array(

@@ -13,7 +13,7 @@ function policies_procedures_and_forms_user_default_roles() {
   // Exported role: Policies, Procedures, and Forms Admin.
   $roles['Policies, Procedures, and Forms Admin'] = array(
     'name' => 'Policies, Procedures, and Forms Admin',
-    'weight' => 21,
+    'weight' => 36,
   );
 
   return $roles;

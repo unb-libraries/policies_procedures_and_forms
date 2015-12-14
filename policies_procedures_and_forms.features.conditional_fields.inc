@@ -10,7 +10,7 @@
 function policies_procedures_and_forms_conditional_fields_default_fields() {
   $items = array();
 
-  $items[] = array(
+  $items["node:policies_procedures_and_forms:0"] = array(
     'entity' => 'node',
     'bundle' => 'policies_procedures_and_forms',
     'dependent' => 'field_file',
@@ -391,7 +391,7 @@ function policies_procedures_and_forms_conditional_fields_default_fields() {
     ),
   );
 
-  $items[] = array(
+  $items["node:policies_procedures_and_forms:1"] = array(
     'entity' => 'node',
     'bundle' => 'policies_procedures_and_forms',
     'dependent' => 'field_url',

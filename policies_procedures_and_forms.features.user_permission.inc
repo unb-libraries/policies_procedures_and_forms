@@ -59,7 +59,7 @@ function policies_procedures_and_forms_user_default_permissions() {
   $permissions['view ppf'] = array(
     'name' => 'view ppf',
     'roles' => array(
-      'authenticated user' => 'authenticated user',
+      'Regular Staff Member' => 'Regular Staff Member',
     ),
     'module' => 'policies_procedures_and_forms',
   );
