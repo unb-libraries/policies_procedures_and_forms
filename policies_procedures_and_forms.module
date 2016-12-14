@@ -60,9 +60,15 @@ function _ppf_page() {
   .views-row {
     margin: 10px 0;
   }', 'inline');
-  $output = '';
+   $output = '';
   if (user_access('create policies_procedures_and_forms content')) {
-    $output .= '<p><a href="/node/add/policies-procedures-and-forms">Upload more Policies, Procedures and Forms</a></p>';
+    $output .= '<li><a href="/node/add/policies-procedures-and-forms">Upload more Policies, Procedures and Forms</a></li>';
+  }
+  if (user_access('edit any policies_procedures_and_forms content')) {
+    $output .= '<li><a href="/policies-procedures-forms/edit">Administer existing Policies, Procedures and Forms</a></li>';
+  }
+  if ($output) {
+    $output = '<ul>' . $output . '</ul>';
   }
   $output .= views_embed_view('policies_procedures_and_forms', 'block');
   return $output;
