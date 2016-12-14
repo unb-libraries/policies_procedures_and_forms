@@ -108,6 +108,76 @@ function policies_procedures_and_forms_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: URL */
+  $handler->display->display_options['fields']['field_url']['id'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['table'] = 'field_data_field_url';
+  $handler->display->display_options['fields']['field_url']['field'] = 'field_url';
+  $handler->display->display_options['fields']['field_url']['label'] = '';
+  $handler->display->display_options['fields']['field_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_url']['element_label_colon'] = FALSE;
+  /* Field: Content: File */
+  $handler->display->display_options['fields']['field_file']['id'] = 'field_file';
+  $handler->display->display_options['fields']['field_file']['table'] = 'field_data_field_file';
+  $handler->display->display_options['fields']['field_file']['field'] = 'field_file';
+  $handler->display->display_options['fields']['field_file']['label'] = '';
+  $handler->display->display_options['fields']['field_file']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_file']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_file']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_file']['type'] = 'file_url_plain';
+  /* Field: Content: URL or Upload File */
+  $handler->display->display_options['fields']['field_url_or_upload_file']['id'] = 'field_url_or_upload_file';
+  $handler->display->display_options['fields']['field_url_or_upload_file']['table'] = 'field_data_field_url_or_upload_file';
+  $handler->display->display_options['fields']['field_url_or_upload_file']['field'] = 'field_url_or_upload_file';
+  $handler->display->display_options['fields']['field_url_or_upload_file']['label'] = '';
+  $handler->display->display_options['fields']['field_url_or_upload_file']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_url_or_upload_file']['element_label_colon'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Comment */
+  $handler->display->display_options['fields']['field_comment']['id'] = 'field_comment';
+  $handler->display->display_options['fields']['field_comment']['table'] = 'field_data_field_comment';
+  $handler->display->display_options['fields']['field_comment']['field'] = 'field_comment';
+  $handler->display->display_options['fields']['field_comment']['label'] = '';
+  $handler->display->display_options['fields']['field_comment']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_comment']['alter']['text'] = '- [field_comment]';
+  $handler->display->display_options['fields']['field_comment']['element_label_colon'] = FALSE;
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
+  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['label'] = '';
+  $handler->display->display_options['fields']['field_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['element_type'] = 'em';
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['edit_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['edit_node']['text'] = '[edit]';
+  /* Field: Content: Delete link */
+  $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
+  $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
+  $handler->display->display_options['fields']['delete_node']['label'] = '';
+  $handler->display->display_options['fields']['delete_node']['element_type'] = 'em';
+  $handler->display->display_options['fields']['delete_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['delete_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['delete_node']['text'] = '[delete]';
+  $handler->display->display_options['path'] = 'policies-procedures-forms/edit';
   $export['policies_procedures_and_forms'] = $view;
 
   return $export;

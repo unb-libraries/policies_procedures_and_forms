@@ -15,6 +15,7 @@ function policies_procedures_and_forms_user_default_permissions() {
     'name' => 'create policies_procedures_and_forms content',
     'roles' => array(
       'Policies, Procedures, and Forms Admin' => 'Policies, Procedures, and Forms Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -24,6 +25,7 @@ function policies_procedures_and_forms_user_default_permissions() {
     'name' => 'delete any policies_procedures_and_forms content',
     'roles' => array(
       'Policies, Procedures, and Forms Admin' => 'Policies, Procedures, and Forms Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -33,6 +35,7 @@ function policies_procedures_and_forms_user_default_permissions() {
     'name' => 'delete own policies_procedures_and_forms content',
     'roles' => array(
       'Policies, Procedures, and Forms Admin' => 'Policies, Procedures, and Forms Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -42,6 +45,7 @@ function policies_procedures_and_forms_user_default_permissions() {
     'name' => 'edit any policies_procedures_and_forms content',
     'roles' => array(
       'Policies, Procedures, and Forms Admin' => 'Policies, Procedures, and Forms Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -51,6 +55,7 @@ function policies_procedures_and_forms_user_default_permissions() {
     'name' => 'edit own policies_procedures_and_forms content',
     'roles' => array(
       'Policies, Procedures, and Forms Admin' => 'Policies, Procedures, and Forms Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -60,6 +65,7 @@ function policies_procedures_and_forms_user_default_permissions() {
     'name' => 'view ppf',
     'roles' => array(
       'Regular Staff Member' => 'Regular Staff Member',
+      'administrator' => 'administrator',
     ),
     'module' => 'policies_procedures_and_forms',
   );
